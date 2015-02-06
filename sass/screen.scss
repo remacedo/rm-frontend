@@ -1,0 +1,392 @@
+/* CSS Document 
++----------------------------------------------------------------+
+:: Blog / Portfolio - RM Renato Macedo Front-End Developer
+:: Versão: 1.0
+:: Front-End: Renato de Macedo
+:: Data: 05/02/2015
++----------------------------------------------------------------+
+*/
+
+
+@import "compass/reset";
+
+/*
++----------------------------------------------------------------+
+:: VARIABLES
++----------------------------------------------------------------+
+*/
+
+
+/* fonts */
+$fontDefault: Tahoma, Arial;
+
+/*size fonts*/
+$sizeDefault: 0.875em;
+$font10px: 0.625em;
+$font11px: 0.688em;
+$font12px: 0.750em;
+$font13px: 0.813em;
+$font14px: 0.875em;
+$font15px: 0.938em;
+$font16px: 1.000em;
+$font17px: 1.063em;
+$font18px: 1.125em;
+$font19px: 1.188em;
+$font22px: 1.375em;
+$font24px: 1.500em;
+$font26px: 1.625em;
+$font28px: 1.750em;
+$font34px: 2.125em;
+
+
+/*
++----------------------------------------------------------------+
+:: LAYOUT
++----------------------------------------------------------------+
+*/
+
+body{
+	//background: url(../img/layout/background.png);
+	font-family: $fontDefault;
+	font-size: $font14px;
+}
+
+h1{
+	margin: 0 0 20px 0;
+}
+
+p{
+	color:#303131;
+	margin: 10px 0;
+}
+
+/*
++----------------------------------------------------------------+
+:: TOP
++----------------------------------------------------------------+
+*/
+
+.top{
+	height: 36px;
+	background: #e8e8e6;
+	width: 100%;
+	.menuH{
+		float: right;
+		line-height: 36px;
+		li{
+			margin: 0 0 0 20px;
+			a{
+				color: #072a40;
+				background: url(../img/layout/sprite/arrow-menu.png) left center no-repeat;
+				padding-left: 8px;
+			}
+		}
+		li::before{
+			content: "";
+			border-right: 1px solid #87969e;
+			margin-right: 20px;
+			padding: 4px 0;
+		}
+		.noBorder::before{
+			border: 0;
+		}
+	}
+}
+
+ul.menuH{
+	li{
+		float: left;
+		text-align: center;
+	}
+}
+
+/*
++----------------------------------------------------------------+
+:: HEADER
++----------------------------------------------------------------+
+*/
+
+header{
+	width: 100%;
+	background: #fff;
+	min-height: 160px;
+	padding: 20px 0 0 0;
+	background: url(../img/layout/border-header.png) center bottom no-repeat;
+	.logoHeader{
+		text-align: center;
+		margin-bottom: 20px;
+		img{
+			max-height: 117px;
+		}
+	}
+
+	.headerRight{
+		min-height: 80px;
+	}
+}
+
+.socialHeader, .socialHeaderMobile{
+	font-size: $font15px;
+	color: #7f8589;
+	float: right;
+	line-height: 32px;
+	li{
+		float: left;
+	}
+	li.icon a{
+		width: 33px;
+		height: 32px;
+		margin-left: 7px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	a.facebook{
+		background: url(../img/layout/sprite/icon-facebook.png);
+		display: block;
+	}
+	a.twitter{
+		background: url(../img/layout/sprite/icon-twitter.png);
+		display: block;
+	}
+	a.linkedin{
+		background: url(../img/layout/sprite/icon-linkedin.png);
+		display: block;
+	}
+}
+
+ .socialHeaderMobile{
+	margin-top: 7px;
+ }
+
+.main{
+	background: url(../img/layout/background.png);
+	min-height: 700px;
+	margin-top: 30px;
+}
+
+
+/*
++----------------------------------------------------------------+
+:: BLOG
++----------------------------------------------------------------+
+*/
+
+
+.post{
+	background: #f8f8f7;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	padding-bottom: 50px;
+	margin-bottom: 80px;
+
+	h1{
+		color: #0ac3d5;
+		font-size: $font26px;
+		font-weight: bold;
+	}
+
+	p{
+		font-size: $font18px;
+	}
+
+	.mainPost{
+		width: 95%;
+		padding: 2.5%;
+		//float: left;
+	}
+
+	.author{
+		img, span{
+			float: left;
+			margin: 0 0 0 7px;
+		}
+		span{
+			padding-top: 25px;
+			color: #303131;
+			b{
+				color:#0ac3d5;
+			}
+		}
+	}
+
+	a.button{
+		background: url(../img/layout/back-button.png);
+		height: 55px;
+		//line-height: 55px;
+		padding: 15px 40px;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		font-weight: bold;
+		color: #fff;
+		font-size: $font24px;
+		margin: 40px 0;
+		float: right;
+	}
+
+}
+
+.img-top-radius{
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-topright: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.legend-img{
+	min-height: 32px;
+	width: 100%;
+	background: #d1d1cd;
+	margin-bottom: 16px;
+	float: left;
+	span{
+		float: right;
+		padding: 10px 0 0 0;
+		margin: 0 10px 0 5px;
+		a{
+			color: #0ac3d5;
+		}
+		a::before{
+			content: "";
+			border-right: 1px solid #303131;
+			margin-right: 10px;
+			padding: 2px 0;
+		}
+	}
+	.tags{
+		float: right;
+		
+		li{
+			float: right;
+			color: #fff;
+			background: #0ac3d5;
+			padding: 5px;
+			line-height: 20px;
+			margin: 1px 0 0 1px;
+		}
+		a{
+			color:#fff;
+		}
+	}
+}
+
+
+
+
+/*
++----------------------------------------------------------------+
+:: MEDIA QUERY
++----------------------------------------------------------------+
+*/
+
+ @media (max-width: 768px) {
+	header{
+		.headerRight{
+			min-height: 1px;
+		}
+	}
+
+	.top{
+		height: 47px;
+		.menuH{
+			float: left;
+			//margin-left: -30px;
+			line-height: 47px;
+			li{
+				margin: 0 10px 0 0;
+				padding: 0;
+			}
+			li::before{
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.logoHeader{
+		img{
+			max-height: 153px!important;
+		}
+		.img-responsive{
+			display: inline;
+		}
+	}
+
+	.socialHeader{
+		/*margin: -188px -26px 0 0;
+		padding-left: 6px;
+		li.icon a{
+			margin: 0 3px 0 0!important;
+		}*/
+	}
+	.blog{
+		.img-top-radius{
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0;
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.post{
+		.author{
+			span{
+				padding-top: 0;
+				//margin-top:25px;
+				//float: left;
+				b{
+					margin-top:5px;
+					float: left;
+				}
+			}
+			.legend{
+				padding-top: 25px;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+.legend-img{
+		.tags{
+			margin: 10px;
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	.top{
+		.col-xs-7, .col-xs-5{
+			width: 100%;
+		}
+		.menuH{
+			float: right;
+			margin: 0 0 0 10px;
+			li{
+				margin: 0 0 0 10px;
+			}
+		}
+	}	
+
+	.socialHeaderMobile {
+		margin: 10px 0 20px 0!important;
+		float: right!important;
+	}
+
+	.legend-img{
+		span{
+			a::before{
+				content: "";
+				border-right: 0;
+			}
+		}
+	}
+
+	.logoHeader{
+		margin-top: 40px!important;
+	}
+
+}
