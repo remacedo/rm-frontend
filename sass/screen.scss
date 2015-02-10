@@ -115,6 +115,7 @@ header{
 	.logoHeader{
 		text-align: center;
 		margin-bottom: 20px;
+		display: block;
 		img{
 			max-height: 117px;
 		}
@@ -446,7 +447,7 @@ header{
 	}
 }
 
-@media (max-width: 360px) {
+@media (max-width: 479px) {
 	.top{
 		.col-xs-7, .col-xs-5{
 			width: 100%!important;
