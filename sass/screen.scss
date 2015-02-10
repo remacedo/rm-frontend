@@ -164,7 +164,39 @@ header{
 	margin-top: 30px;
 }
 
+.contMenuCateg{
+	width: 100%;
+	float: left;
+	margin: 32px 0 0 0;
+}
+
+.searchHeader{
+	background: #e0e0df url(../img/layout/sprite/icon-search.png) 10px center no-repeat;
+	-webkit-border-top-left-radius: 25px;
+	-webkit-border-bottom-left-radius: 25px;
+	-moz-border-radius-topleft: 25px;
+	-moz-border-radius-bottomleft: 25px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	height: 40px;
+	width: 200px;
+	float: right;
+	//margin: 3px -115px 0 0;
+	margin: 3px -20px 0 0;
+	position: relative;
+	z-index: 10;
+	input{
+		border: 0;
+		background: none;
+		height: 25px;
+		margin: 8px 0 0 30px;
+	}
+}
+
 .menuCateg{
+	position: relative;
+	z-index: 20;
+	right: 0;
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
 	border-radius: 25px;
@@ -173,7 +205,7 @@ header{
 	//min-width: 500px;
 	padding:0 10px;
 	float: right;
-	margin: 32px 0 0 0;
+	width: auto;
 	background: #39c7d6 url(../img/layout/back-categ.png);
 	li{
 		float: left;
@@ -378,13 +410,6 @@ header{
 		}
 	}
 
-	.socialHeader{
-		/*margin: -188px -26px 0 0;
-		padding-left: 6px;
-		li.icon a{
-			margin: 0 3px 0 0!important;
-		}*/
-	}
 	.blog{
 		.img-top-radius{
 			-webkit-border-radius: 0;
@@ -421,10 +446,11 @@ header{
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
 	.top{
 		.col-xs-7, .col-xs-5{
-			width: 100%;
+			width: 100%!important;
+			//border: 10px solid #000;
 		}
 		.menuH{
 			float: right;
@@ -449,8 +475,10 @@ header{
 		}
 	}
 
-	.logoHeader{
+	a.logoHeader{
 		margin-top: 40px!important;
+		float: left;
+		//border: 1px solid #000;
 	}
 
 }
