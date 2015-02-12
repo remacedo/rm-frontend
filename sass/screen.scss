@@ -504,10 +504,12 @@ header{
 	.link1{
 		background-color: #0ac3d5;
 		margin-top: -18px;
+		z-index: 10;
 	}
 
 	.link2{
 		background-color: #0faebd;
+		z-index: 20;
 	}
 
 	.link3{
@@ -515,6 +517,7 @@ header{
 		-webkit-border-radius: 20px;
 		-moz-border-radius: 20px;
 		border-radius: 20px;
+		z-index: 30;
 	}
 
 	.link2, .link3{
@@ -534,10 +537,31 @@ header{
 		background-image: url(../img/layout/sprite/icon-plus.png);
 		background-position: 20px 30px;
 		background-repeat: no-repeat;
-		a{
-			display: block;
-			color: #fff;
+		
+		.cont{
+			position: absolute;
+			//border: 1px solid #000;
+				h3{
+				margin-top: 15px;
+				padding: 0 0 5px 0;
+				//float: left;
+					a{
+						font-size: $font18px;
+						font-weight: bold;
+					}
+
+				}
+			a{	
+				display: block;
+				color: #fff;
+				//box-sizing: border-box;
+				margin: 0 10px 0 75px;
+				font-size: $font15px;
+				line-height: 18px;
+			}
 		}
+
+		
 	}
 	
 }
@@ -590,7 +614,45 @@ header{
 	}
 }
 
+@media (min-width: 1024px) and (max-width: 1280px) {
+	
+	.sidebar2{
+
+		.contLink{
+			
+			.cont{
+				
+				//border: 1px solid #000;
+					h3{
+					margin-top: 15px;
+					padding: 0;
+					//float: left;
+						a{
+							font-size: $font16px;
+							font-weight: bold;
+						}
+
+					}
+				
+				a{	
+					display: block;
+					color: #fff;
+					//box-sizing: border-box;
+					margin: 0 10px 0 75px;
+					font-size: $font14px;
+					line-height: 18px;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
+	
 	.post{
 		.author{
 			span{
@@ -607,12 +669,84 @@ header{
 			}
 		}
 	}
+	
 	.menuCateg{
 		li{
 			font-size: $font13px;
 		}
 	}
+
+
+	.sidebar2{
+
+		.contLink{
+			
+			.cont{
+					h3{
+					margin-top: 25px;
+						a{
+							font-size: $font15px;
+							display: block;
+						}
+
+					}
+				
+				a{	
+					//display: none;
+				}
+
+			}
+
+		}
+
+	}
+
+
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	
+	.sidebar2{
+
+		.contLink{
+			
+			.cont{
+				
+				a{	
+					display: none;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+
+@media (max-width: 765px) {
+	.sidebar2{
+
+		.contLink{
+						
+			.cont{
+
+				h3{
+					margin: 27px 0 0 0;
+				}
+				
+				a{	
+					display: block;
+				}
+
+			}
+
+		}
+
+	}
+}
+
 
 @media (max-width: 480px) {
 .legend-img{
@@ -661,6 +795,29 @@ header{
 		margin-top: 40px!important;
 		float: left;
 		//border: 1px solid #000;
+	}
+
+	.sidebar2{
+
+		.contLink{
+						
+			.cont{
+
+				h3{
+					margin: 27px 0 0 0;
+					a{
+						display: block;
+					}
+				}
+				
+				a{	
+					display: none;
+				}
+
+			}
+
+		}
+
 	}
 
 }
