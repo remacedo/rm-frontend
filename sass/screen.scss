@@ -1,4 +1,4 @@
-/* CSS Document 
+/* CSS Document
 +----------------------------------------------------------------+
 :: Blog / Portfolio - RM Renato Macedo Front-End Developer
 :: Versão: 1.0
@@ -246,7 +246,7 @@ header{
 			-moz-border-radius-bottomleft: 25px;
 			border-top-left-radius: 25px;
 			border-bottom-left-radius: 25px;
-			
+
 		}
 	}
 	.n2{
@@ -386,7 +386,7 @@ header{
 	ul{
 		position: relative;
 		margin: 0 auto;
-		width: 200px; /* MANIPULAR NA PAGINAÇÃO */
+		width: 150px; /* MANIPULAR NA PAGINAÇÃO */
 		li{
 			float: left;
 			-webkit-border-radius: 200px;
@@ -418,12 +418,12 @@ header{
 
 .tags{
 	float: right;
-	
+
 	li{
 		float: right;
 		color: #fff;
 		background: #0ac3d5;
-		
+
 		line-height: 20px;
 		margin: 1px 0 0 1px;
 	}
@@ -445,13 +445,15 @@ header{
 +----------------------------------------------------------------+
 */
 
-sidebar{
-	.tags{
-		font-size: $font18px;
-		li{
-			float: left;
-		}
-	}
+.sidebar1, .sidebar2{
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	width: 95%;
+	//margin: 0 0 20px 0;
+	//min-height: 300px;
+	float: right;
+	padding: 10px 0;
 
 	h2{
 		font-size: $font26px;
@@ -460,27 +462,76 @@ sidebar{
 		line-height: 53px;
 		background: url(../img/layout/back-page-number.png) bottom center no-repeat;
 		margin-bottom: 12px;
+		margin: 0 0 20px 2.5%;
+		width: 95%;
 	}
-}
 
-.sidebar1, .sidebar2{
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
-	width: 95%;
-	//margin: 0 0 20px 0;
-	min-height: 300px;
-	float: right;
-	padding: 20px 5%;
 }
 
 .sidebar1{
 	background-color: #fff;
+
+	.tags{
+		font-size: $font18px;
+		padding: 0 10px;
+		margin-bottom: 20px;
+		floart: left;
+		li{
+			float: left;
+		}
+	}
 }
 
 .sidebar2{
 	background-color: #f6f6f5;
 	margin:40px 0 40px 0;
+	.page-numbers{
+		background: none;
+		margin: 20px 0 0 0;
+		ul{
+			width: 165px; /* Manipular */
+		}
+	}
+
+	.link1{
+		background-color: #0ac3d5;
+		margin-top: -18px;
+	}
+
+	.link2{
+		background-color: #0faebd;
+	}
+
+	.link3{
+		background-color: #0b9fad;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		border-radius: 20px;
+	}
+
+	.link2, .link3{
+		margin-top: -20px;
+	}
+
+	.contLink{
+		-webkit-border-top-left-radius: 20px;
+		-webkit-border-top-right-radius: 20px;
+		-moz-border-radius-topleft: 20px;
+		-moz-border-radius-topright: 20px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		width: 100%;
+		min-height: 110px;
+		position: relative;
+		background-image: url(../img/layout/sprite/icon-plus.png);
+		background-position: 20px 30px;
+		background-repeat: no-repeat;
+		a{
+			display: block;
+			color: #fff;
+		}
+	}
+	
 }
 
 
@@ -548,6 +599,11 @@ sidebar{
 			}
 		}
 	}
+	.menuCateg{
+		li{
+			font-size: $font13px;
+		}
+	}
 }
 
 @media (max-width: 480px) {
@@ -577,7 +633,7 @@ sidebar{
 				margin: 0 0 0 10px;
 			}
 		}
-	}	
+	}
 
 	.socialHeaderMobile {
 		margin: 10px 0 20px 0!important;
