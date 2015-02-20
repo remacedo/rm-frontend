@@ -339,7 +339,8 @@ header{
 	}
 
 	a.button{
-		background: url(../img/layout/back-button.png);
+		background: url(../img/layout/back-button.png) #0ac3d5 center bottom no-repeat;
+		min-width: 208px;
 		height: 55px;
 		//line-height: 55px;
 		padding: 15px 40px;
@@ -351,6 +352,7 @@ header{
 		font-size: $font24px;
 		margin: 40px 0;
 		float: right;
+		text-align: center;
 	}
 
 }
@@ -822,4 +824,23 @@ header{
 
 	}
 
+}
+
+
+
+.footer{
+	-webkit-border-top-left-radius:25px;
+	-webkit-border-top-right-radius:25px;
+	-moz-border-radius-topleft:25px;
+	-moz-border-radius-topright:25px;
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+	background-color:#d1d1cd;
+	min-height:57px;
+
+	.copyRight{margin-top:23px;color:#9e9e9b;font-size:0.875em}
+
+	.socialHeader{color:#303131;margin:14px 0 0 0;float:right}
+
+	.line{width:100%;border-bottom:1px solid #aeaea6;margin:30px 0}
 }
