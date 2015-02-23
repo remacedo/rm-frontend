@@ -187,7 +187,7 @@ header{
 }
 
 .searchHeader{
-	background: #e0e0df url(../img/layout/sprite/icon-search.png) 10px center no-repeat;
+	background: #e0e0df url(../img/layout/icon-search.png) 10px center no-repeat;
 	-webkit-border-top-left-radius: 25px;
 	-webkit-border-bottom-left-radius: 25px;
 	-moz-border-radius-topleft: 25px;
@@ -597,7 +597,7 @@ header{
 	display: block;
 	width: 60px;
 	height: 48px;
-	background: url(../img/layout/sprite/btn-top.png);
+	//background: url(../img/layout/sprite/btn-top.png);
 	position: relative;
 	margin: 0 auto;
 	color: #fff;
@@ -825,6 +825,11 @@ header{
 	}
 
 .line{width:100%;border-bottom:1px solid #aeaea6;margin:15px 0;}
+
+
+.sidebar1, .sidebar2{
+	width: 100%;
+}
 
 }
 

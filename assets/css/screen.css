@@ -68,9 +68,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 :: SPRITES
 +----------------------------------------------------------------+
 */
-/* line 80, sprite/*.png */
-.sprite-sprite, .sprite-btn-top, .sprite-icon-facebook, .sprite-icon-linkedin, .sprite-icon-search, .sprite-icon-twitter {
-  background-image: url('../img/sprite-sbbd0a0c4d2.png');
+/* line 72, sprite/*.png */
+.sprite-sprite, .sprite-btn-top, .sprite-icon-facebook, .sprite-icon-linkedin, .sprite-icon-twitter {
+  background-image: url('../img/sprite-s13543271ed.png');
   background-repeat: no-repeat; }
 
 /* line 84, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
@@ -86,12 +86,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-position: 0 -80px; }
 
 /* line 84, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.sprite-icon-search {
-  background-position: 0 -112px; }
-
-/* line 84, ../../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .sprite-icon-twitter {
-  background-position: 0 -131px; }
+  background-position: 0 -112px; }
 
 /*
 +----------------------------------------------------------------+
@@ -225,7 +221,7 @@ header {
 
 /* line 189, ../../sass/screen.scss */
 .searchHeader {
-  background: #e0e0df url(../img/layout/sprite/icon-search.png) 10px center no-repeat;
+  background: #e0e0df url(../img/layout/icon-search.png) 10px center no-repeat;
   -webkit-border-top-left-radius: 25px;
   -webkit-border-bottom-left-radius: 25px;
   -moz-border-radius-topleft: 25px;
@@ -584,7 +580,6 @@ header {
   display: block;
   width: 60px;
   height: 48px;
-  background: url(../img/layout/sprite/btn-top.png);
   position: relative;
   margin: 0 auto;
   color: #fff;
@@ -724,45 +719,49 @@ header {
   .line {
     width: 100%;
     border-bottom: 1px solid #aeaea6;
-    margin: 15px 0; } }
+    margin: 15px 0; }
+
+  /* line 830, ../../sass/screen.scss */
+  .sidebar1, .sidebar2 {
+    width: 100%; } }
 @media (max-width: 479px) {
-  /* line 833, ../../sass/screen.scss */
+  /* line 838, ../../sass/screen.scss */
   .top .col-xs-7, .top .col-xs-5 {
     width: 100% !important; }
-  /* line 837, ../../sass/screen.scss */
+  /* line 842, ../../sass/screen.scss */
   .top .menuH {
     float: right;
     margin: 0 0 0 10px; }
-    /* line 840, ../../sass/screen.scss */
+    /* line 845, ../../sass/screen.scss */
     .top .menuH li {
       margin: 0 0 0 10px; }
 
-  /* line 846, ../../sass/screen.scss */
+  /* line 851, ../../sass/screen.scss */
   .socialHeaderMobile {
     margin: 10px 0 20px 0 !important;
     float: right !important; }
 
-  /* line 853, ../../sass/screen.scss */
+  /* line 858, ../../sass/screen.scss */
   .legend-img span a::before {
     content: "";
     border-right: 0; }
 
-  /* line 860, ../../sass/screen.scss */
+  /* line 865, ../../sass/screen.scss */
   a.logoHeader {
     margin-top: 40px !important;
     float: left; }
 
-  /* line 870, ../../sass/screen.scss */
+  /* line 875, ../../sass/screen.scss */
   .sidebar2 .contLink .cont {
     /*a{	
     	display: none;
     }*/ }
-    /* line 872, ../../sass/screen.scss */
+    /* line 877, ../../sass/screen.scss */
     .sidebar2 .contLink .cont a {
       display: block; }
-      /* line 874, ../../sass/screen.scss */
+      /* line 879, ../../sass/screen.scss */
       .sidebar2 .contLink .cont a h3 {
         margin: 27px 0 0 0; }
-      /* line 878, ../../sass/screen.scss */
+      /* line 883, ../../sass/screen.scss */
       .sidebar2 .contLink .cont a p {
         display: none; } }
