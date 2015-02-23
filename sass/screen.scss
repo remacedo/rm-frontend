@@ -17,7 +17,6 @@
 */
 
 @import "sprite/*.png";
-
 @include all-sprite-sprites;
 
 
@@ -71,6 +70,10 @@ p{
 	margin: 10px 0;
 }
 
+.displayNone{
+	display: none;
+}
+
 /*
 +----------------------------------------------------------------+
 :: TOP
@@ -110,6 +113,26 @@ ul.menuH{
 		text-align: center;
 	}
 }
+
+
+.menuMobile{
+	-webkit-border-radius: 300px;
+	-moz-border-radius: 300px;
+	border-radius: 300px;
+	background: #0ac3d5 url(../img/layout/icon-menu-mobile.png) center no-repeat;
+	padding: 10px;
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	//margin: -30px 0 0 0;
+	margin: -35px 0 0 0;
+	right: 5px;
+	&:hover{
+		cursor: pointer;
+	}
+	z-index: 20;
+}
+
 
 /*
 +----------------------------------------------------------------+
@@ -475,6 +498,7 @@ header{
 	//min-height: 300px;
 	float: right;
 	padding: 10px 0;
+	text-transform: uppercase;
 
 	h2{
 		font-size: $font26px;
@@ -789,6 +813,41 @@ header{
 
 
 @media (max-width: 765px) {
+
+	header{
+		min-height: 200px;
+		margin-bottom: 50px;
+	}
+
+	.searchHeader{
+		background: #e0e0df url(../img/layout/icon-search.png) center no-repeat;
+		-webkit-border-radius: 300px;
+		-moz-border-radius: 300px;
+		border-radius: 300px;
+		height: 47px;
+		width: 47px;
+		//float: right;
+		//margin: 3px -170px 0 0;
+		position: absolute;
+		//margin: 3px -20px 0 0;
+		//position: relative;
+		//z-index: 10;
+		right: 77px;
+		margin: -25px 0 0 0;
+		input{
+			/*border: 0;
+			background: none;
+			height: 25px;
+			margin: 8px 0 0 50px;
+			outline: none;
+			color: #0ac3d5;*/
+			display: none;
+		}
+		&:hover{
+			cursor: pointer;
+		}
+	}
+
 	.sidebar2{
 
 		.contLink{
