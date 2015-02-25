@@ -22,7 +22,7 @@ $(document).ready(function(){
 
 		
 		inputSearch.toggleClass("openSearch");
-		fieldSearch.show().focus();
+		fieldSearch.show().focus().attr("placeholder", "o que você procura?");
 
 		if (fieldSearch.val() != "") {
 			$('#formSearch').submit();
