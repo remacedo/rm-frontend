@@ -44,6 +44,7 @@ $font22px: 1.375em;
 $font24px: 1.500em;
 $font26px: 1.625em;
 $font28px: 1.750em;
+$font30px: 1.875em;
 $font34px: 2.125em;
 
 /* colors */
@@ -74,9 +75,18 @@ h1{
 	margin: 0 0 20px 0;
 }
 
+h1.titInt{
+	font-size: $font30px;
+	color: $color1;
+	font-weight: bold;
+	background: url(../img/layout/border-header.png) center bottom no-repeat;
+	line-height: 48px;
+}
+
 p{
-	color: $color4;
+	color: $color5;
 	margin: 10px 0;
+	font-size: $font18px;
 }
 
 
@@ -402,7 +412,7 @@ header{
 	}
 
 	p{
-		font-size: $font18px;
+		font-size: $font19px;
 	}
 
 	.mainPost{
@@ -659,6 +669,41 @@ header{
 	}
 	
 }
+
+
+/*
++----------------------------------------------------------------+
+:: SOBRE
++----------------------------------------------------------------+
+*/
+
+.btnProject{
+	width: 307px;
+	height: 297px;
+	position: relative;
+	margin: 50px auto 0 auto;
+	text-align: center;
+	background: url(../img/sobre/projetos-background.png) center no-repeat;
+	a{
+		background: url(../img/layout/back-button.png) $color1 center bottom no-repeat;
+		width: 208px;
+		height: 55px;
+		padding: 15px 40px;
+		@include border-radius ( 15px );
+		font-weight: bold;
+		color: #fff;
+		font-size: $font24px;
+		text-align: center;
+		float: left;
+		margin: 220px 0 0 50px;
+		&:hover{
+			background: $color3;
+			text-decoration: none;
+		}
+	}
+}
+
+
 
 
 /*
