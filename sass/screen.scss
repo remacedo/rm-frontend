@@ -1,4 +1,4 @@
-/* CSS Document
+/* SASS Document
 +----------------------------------------------------------------+
 :: Blog / Portfolio - RM Renato Macedo Front-End Developer
 :: Versão: 1.0
@@ -6,7 +6,6 @@
 :: Data: 05/02/2015
 +----------------------------------------------------------------+
 */
-
 
 @import "compass/reset";
 
@@ -25,7 +24,6 @@
 :: VARIABLES
 +----------------------------------------------------------------+
 */
-
 
 /* fonts */
 $fontDefault: Tahoma, Arial;
@@ -48,6 +46,17 @@ $font26px: 1.625em;
 $font28px: 1.750em;
 $font34px: 2.125em;
 
+/* colors */
+$black: #000;
+$white: #fff;
+$whiteTxt: #fffffe;
+$color1: #0ac3d5; /* azul */
+$color2: #0b8793; /* azul 2 */
+$color3: #32daeb; /* azul hover */
+$color4: #06182b; /* azul 3 */ 
+$color5: #303131; /* cinza texto  */     
+$color6: #e9e9e4; /* cinza claro  */    
+$color7: #d1d1cd; /* cinza escuro  */    
 
 /*
 +----------------------------------------------------------------+
@@ -66,13 +75,42 @@ h1{
 }
 
 p{
-	color:#303131;
+	color: $color4;
 	margin: 10px 0;
+}
+
+
+a{
+	&:focus{
+		text-decoration: none!important;
+	}
 }
 
 .displayNone{
 	display: none;
 }
+
+
+/*
++----------------------------------------------------------------+
+:: MIXINS
++----------------------------------------------------------------+
+*/
+
+ @mixin border-radius ( $radius ) { 
+ 	-webkit-border-radius: $radius;
+ 	-moz-border-radius: $radius;
+ 	-ms-border-radius: $radius;
+ 	border-radius : $radius ; 
+ }
+
+@mixin transition ($type, $time){
+	-webkit-transition: $type $time ease-in-out;
+	-moz-transition: $type $time ease-in-out;
+	-o-transition: $type $time ease-in-out;
+	transition: $type $time ease-in-out;
+}
+
 
 /*
 +----------------------------------------------------------------+
@@ -94,6 +132,10 @@ p{
 				color: #072a40;
 				background: url(../img/layout/arrow-menu.png) left center no-repeat;
 				padding-left: 8px;
+				&:hover{
+					color: $color3;
+					text-decoration: none;
+				}
 			}
 		}
 		li::before{
@@ -120,7 +162,7 @@ ul.menuH{
 	-webkit-border-radius: 300px;
 	-moz-border-radius: 300px;
 	border-radius: 300px;
-	background: #0ac3d5 url(../img/layout/icon-menu-mobile.png) center no-repeat;
+	background: $color1 url(../img/layout/icon-menu-mobile.png) center no-repeat;
 	padding: 10px;
 	width: 64px;
 	height: 64px;
@@ -177,8 +219,15 @@ header{
 		height: 32px;
 		margin-left: 7px;
 		display: block;
+		padding: 10px;
+		background-color: $color1;
+		@include border-radius ( 50px );
 		//background-position: center;
 		//background-repeat: no-repeat;
+		&:hover{
+			background-color: $color3;
+			@include transition (all, 0.3s);
+		}
 	}
 	/*a.facebook{
 		background: url(../img/layout/sprite/icon-facebook.png);
@@ -327,7 +376,8 @@ header{
 			border-bottom-left-radius: 25px;
 			&:hover{
 				text-decoration: none;
-				background-color: #4ed8e6;
+				background-color: $color3;
+				@include transition (all, 0.3s);
 			}
 		}
 	}
@@ -396,7 +446,7 @@ header{
 	margin-bottom: 80px;
 
 	h1{
-		color: #0ac3d5;
+		color: $color1;
 		font-size: $font26px;
 		font-weight: bold;
 	}
@@ -418,15 +468,15 @@ header{
 		}
 		span{
 			padding-top: 25px;
-			color: #303131;
+			color: $color4;
 			b{
-				color:#0ac3d5;
+				color:$color1;
 			}
 		}
 	}
 
 	a.button{
-		background: url(../img/layout/back-button.png) #0ac3d5 center bottom no-repeat;
+		background: url(../img/layout/back-button.png) $color1 center bottom no-repeat;
 		min-width: 208px;
 		height: 55px;
 		//line-height: 55px;
@@ -440,6 +490,11 @@ header{
 		margin: 40px 0;
 		float: right;
 		text-align: center;
+		&:hover{
+			background: $color3;
+			text-decoration: none;
+			//@include transition (all, 0.3s);
+		}
 	}
 
 }
@@ -464,11 +519,15 @@ header{
 		padding: 10px 0 0 0;
 		margin: 0 10px 0 5px;
 		a{
-			color: #0ac3d5;
+			color: $color1;
+			&:hover{
+				color:$color2;
+				text-decoration: none;
+			}
 		}
 		a::before{
 			content: "";
-			border-right: 1px solid #303131;
+			border-right: 1px solid $color4;
 			margin-right: 10px;
 			padding: 2px 0;
 		}
@@ -480,6 +539,12 @@ header{
 	min-height: 44px;
 	background: url(../img/layout/back-page-number.png) center no-repeat;
 	margin-bottom: 60px;
+	.active{
+		background-color: $color1;
+		&:hover{
+			background-color: $color1;
+		}
+	}
 	ul{
 		position: relative;
 		margin: 0 auto;
@@ -505,13 +570,12 @@ header{
 				color: #fff;
 				&:hover{
 					text-decoration: none;
-					background-color: #0ac3d5;
+					background-color: $color6;
 				}
 			}
 		}
 	}
 }
-
 
 .tags{
 	float: right;
@@ -519,7 +583,7 @@ header{
 	li{
 		float: right;
 		color: #fff;
-		background: #0ac3d5;
+		background: $color1;
 
 		line-height: 20px;
 		margin: 1px 0 0 1px;
@@ -530,8 +594,8 @@ header{
 		padding: 5px;
 		&:hover{
 			text-decoration: none;
-			background-color: #06182b;
-
+			background-color: $color3;
+			//@include transition (all, 0.5s);
 		}
 	}
 }
@@ -594,7 +658,7 @@ header{
 	}
 
 	.link1{
-		background-color: #0ac3d5;
+		background-color: $color1;
 		margin-top: -18px;
 		z-index: 10;
 	}
@@ -637,7 +701,7 @@ header{
 					
 					
 					h3{
-						margin-top: 15px;
+						margin-top: 10px;
 						padding: 0 0 5px 0;
 						//float: left;
 						font-size: $font18px;
@@ -687,6 +751,9 @@ header{
 		color: #fff;
 		text-decoration: none;
 	}
+	&:focus{
+		color: #fff;
+	}
 }
 
 .footer{
@@ -701,7 +768,7 @@ header{
 
 	.copyRight{margin-top:23px;color:#9e9e9b;font-size:0.875em}
 
-	.socialHeader{color:#303131;margin:10px 0 20px 0;float:right}
+	.socialHeader{color:$color4;margin:10px 0 20px 0;float:right}
 
 	.line{width:100%;border-bottom:1px solid #aeaea6;margin:30px 0;}
 }
@@ -761,7 +828,7 @@ header{
 	
 	.sidebar2{
 
-		.contLink{
+		/*.contLink{
 			
 			.cont{
 				
@@ -788,7 +855,7 @@ header{
 
 			}
 
-		}
+		}*/
 
 	}
 
@@ -812,15 +879,6 @@ header{
 		//z-index: 10;
 		right: 77px;
 		margin: -25px 0 0 0;
-		input{
-			/*border: 0;
-			background: none;
-			height: 25px;
-			margin: 8px 0 0 50px;
-			outline: none;
-			color: #0ac3d5;*/
-			//display: none;
-		}
 		&:hover{
 			cursor: pointer;
 		}
@@ -846,7 +904,11 @@ header{
 		margin: -25px 80px 0 0;
 		width: 360px;
 		z-index: 5;
+		.fieldSearch{
+			display: block;
+		}
 	}
+
 
 }
 
@@ -1046,6 +1108,13 @@ header{
 
 	}
 
+}
+
+
+@media(max-width: 360px){
+	.openSearch{
+		width: 231px;
+	}
 }
 
 @media(max-width: 320px){

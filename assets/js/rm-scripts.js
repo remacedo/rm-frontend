@@ -16,17 +16,18 @@ $(document).ready(function(){
 */
 
 	$(".iconLupa").click(function(e){
+		
 		e.preventDefault();
 		var inputSearch = $(".searchInput");
 		var fieldSearch = $(".fieldSearch");
 
-		
-		inputSearch.toggleClass("openSearch");
-		fieldSearch.show().focus().attr("placeholder", "o que você procura?");
-
 		if (fieldSearch.val() != "") {
 			$('#formSearch').submit();
-		};
+
+		}else {
+		     inputSearch.toggleClass("openSearch");
+		     fieldSearch.focus();
+		}
 
 	});
 
