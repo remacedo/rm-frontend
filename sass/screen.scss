@@ -940,7 +940,7 @@ header{
 
 	.sidebar2{
 
-		.contLink{
+		/*.contLink{
 			
 			.cont{
 					h3{
@@ -958,7 +958,7 @@ header{
 
 			}
 
-		}
+		}*/
 
 	}
 
@@ -968,19 +968,13 @@ header{
 @media (min-width: 768px) and (max-width: 1023px) {
 	
 	.sidebar2{
-
 		.contLink{
-			
-			.cont{
-				
+			.cont{	
 				a{	
 					p{display: none;}
 				}
-
 			}
-
 		}
-
 	}
 
 }
@@ -1080,6 +1074,7 @@ header{
 		//border: 1px solid #000;
 	}
 
+/*
 	.sidebar2{
 
 		.contLink{
@@ -1100,13 +1095,13 @@ header{
 				
 				/*a{	
 					display: none;
-				}*/
+				}
 
 			}
 
 		}
 
-	}
+	}*/
 
 }
 
