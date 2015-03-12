@@ -704,6 +704,48 @@ header{
 }
 
 
+/*
++----------------------------------------------------------------+
+:: PROJETOS
++----------------------------------------------------------------+
+*/
+
+.projectRow{
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.logoProject, .infosProject{
+	float: left;
+}
+
+.logoProject{
+	width: 179px;
+	margin-right: 10px;
+}
+
+.infosProject{
+	width:130px;
+	margin-top: 30px;
+	h2{
+		font-size: 24px;
+		color: $color5;
+		font-weight: bold;
+	}
+	a{
+		background: $color1;
+		padding: 13px;
+		display: block;
+		text-align: center;
+		color: $whiteTxt;
+		font-size: $font18px;
+		&:hover{
+			background: $color3;
+			text-decoration: none;
+		}
+	}
+}
+
 
 
 /*
@@ -864,6 +906,19 @@ header{
 		}
 	}
 
+
+	/*
+	+----------------------------------------------------------------+
+	:: PROJETOS
+	+----------------------------------------------------------------+
+	*/
+
+
+	.infosProject{
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -913,6 +968,31 @@ header{
 	}
 }
 
+
+@media (max-width: 640px) {
+	
+	/*
+	+----------------------------------------------------------------+
+	:: PROJETOS
+	+----------------------------------------------------------------+
+	*/
+
+	.infosProject{
+		width: 250px;
+	}
+
+	.projectRow{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.logoProject{
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+}
+
 @media (max-width: 480px) {
 	.legend-img{
 		.tags{
@@ -932,6 +1012,18 @@ header{
 	.sidebar1, .sidebar2{
 		width: 100%;
 	}
+
+
+	/*
+	+----------------------------------------------------------------+
+	:: PROJETOS
+	+----------------------------------------------------------------+
+	*/
+
+	.infosProject{
+		width: 180px;
+	}
+
 }
 
 @media (max-width: 479px) {
@@ -972,6 +1064,29 @@ header{
 	.openSearch{
 		width: 231px;
 	}
+
+	.logoProject{
+		margin: 30px auto 0 auto;
+		position: relative;
+		width: 179px;
+		float: none;
+	}
+
+
+
+	.infosProject{
+		text-align: center;
+		width:100%;
+		margin-top: 30px;
+		h2{
+			margin-top: -20px;
+		}
+		a{
+			margin-bottom: 20px;
+		}
+	}
+
+
 }
 
 @media(max-width: 320px){
