@@ -805,7 +805,7 @@ header {
   text-align: center;
   float: right;
   border: 0;
-  margin: 20px 0 0 0; }
+  margin: 10px 0 0 0; }
   /* line 796, ../../sass/screen.scss */
   .contactForm button:hover {
     background: #32daeb;
