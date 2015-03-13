@@ -403,10 +403,10 @@ header{
 
 .post{
 	background: #f8f8f7;
-	@include border-radius-top-left ( 20px );
+	@include border-radius( 20px );
 	padding-bottom: 50px;
 	margin-bottom: 80px;
-
+	//float: left;
 	h1{
 		color: $color1;
 		font-size: $font26px;
@@ -418,8 +418,9 @@ header{
 	}
 
 	.mainPost{
-		width: 95%;
+		width: 100%;
 		padding: 2.5%;
+		box-sizing: border-box;
 	}
 
 	.author{
@@ -456,6 +457,36 @@ header{
 		}
 	}
 
+	.contSocial{
+		width: 100%; 
+		min-height: 60px;
+	}
+
+	.socialHeader{
+		font-size: $font18px;
+		margin: 40px 0 20px 0;
+		line-height: 45px;
+		float: none;
+		right: 0;
+		position: relative;
+		float: right;
+		.txt{
+			display:block;
+		}
+		li.icon a{
+			width: 48px;
+			height: 48px;
+			margin-left: 4px;
+		}
+	}
+
+}
+
+.autorPost{
+	margin: -30px 0 0 0;
+	width: 100%;
+	min-height: 300px;
+	background: url(../img/layout/border-header.png) center top no-repeat;
 }
 
 .img-top-radius{
@@ -550,6 +581,31 @@ header{
 			text-decoration: none;
 			background-color: $color3;
 		}
+	}
+}
+
+.preCode{
+	background-color: $color1;
+	width: 100%;
+	padding: 20px;
+	border-sizing: border-box;
+	color: $whiteTxt;
+	@include border-radius (30px);
+	margin: 40px 0 0 0;
+	.codeLogoTop, .codeLogoBottom {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+	}
+	.codeLogoTop{
+		margin: -85px 0 0 10px;
+	}
+	.codeLogoBottom{
+		margin: 35px 0 0 10px;
+		right: 50px;
+	}
+	code{
+		color: $whiteTxt;
 	}
 }
 
@@ -1140,6 +1196,26 @@ header{
 		a{
 			margin-bottom: 20px;
 		}
+	}
+
+
+	.codeLogoBottom{
+		margin: 65px 0 0 10px!important;
+	}
+
+	.post{
+		.socialHeader{
+			.txt{
+				display: block;
+				width: 100%;
+				line-height: 25px;
+			}
+		}
+	
+	.contSocial{
+		min-height: 100px;
+	}
+
 	}
 
 
