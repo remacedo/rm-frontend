@@ -403,7 +403,7 @@ header{
 
 .post{
 	background: #f8f8f7;
-	@include border-radius( 20px );
+	@include border-radius( 30px );
 	padding-bottom: 50px;
 	margin-bottom: 80px;
 	//float: left;
@@ -507,6 +507,36 @@ header{
 	width: 100%;
 	//min-height: 300px;
 	background: url(../img/layout/border-header.png) center top no-repeat;
+}
+
+.autorPost.perfil{
+	background: #f8f8f7;
+	@include border-radius( 30px );
+	margin-bottom: 80px;
+	padding-bottom: 50px;
+	margin-top: 10px;
+	img{
+		margin-left: 10px;
+	}
+	.socialHeader{
+		margin-bottom: 30px;
+	}
+	h2{
+		margin-top: 30px;
+	}
+	h3{
+		color: $color1;
+		font-size: $font19px;
+		margin: 30px 0 20px 0;
+	}
+	form{
+		font-size: $font19px;
+	}
+	button{
+		margin: 20px 0 0 0;
+		right: 15px;
+		position: absolute;
+	}
 }
 
 .img-top-radius{
@@ -695,7 +725,7 @@ header{
 */
 
 .sidebar1, .sidebar2{
-	@include border-radius ( 20px );
+	@include border-radius ( 30px );
 	width: 95%;
 	float: right;
 	padding: 10px 0;
@@ -965,12 +995,12 @@ header{
 }
 
 .footer{
-	-webkit-border-top-left-radius:25px;
-	-webkit-border-top-right-radius:25px;
-	-moz-border-radius-topleft:25px;
-	-moz-border-radius-topright:25px;
-	border-top-left-radius:25px;
-	border-top-right-radius:25px;
+	-webkit-border-top-left-radius:30px;
+	-webkit-border-top-right-radius:30px;
+	-moz-border-radius-topleft:30px;
+	-moz-border-radius-topright:30px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
 	background-color:#d1d1cd;
 	min-height:57px;
 
@@ -1180,6 +1210,36 @@ header{
 	.logoProject{
 		margin-top: 20px;
 		margin-bottom: 30px;
+	}
+
+	.autorPost.perfil{
+		
+		img{
+			position: relative;
+			margin: 0 auto;
+			width: 194px;
+			float: none;
+		}
+		.socialHeader{
+			width: 160px;
+			min-height: 50px;
+			position: relative;
+			margin: 0 auto 20px auto;
+			float: none;
+		}
+		h2{
+			margin: -20px 0 10px 0;
+			text-align: center;
+			width: 100%;
+		}
+		form{
+			font-size: $font19px;
+		}
+		button{
+			margin: 20px 0 0 0;
+			right: 15px;
+			position: absolute;
+		}
 	}
 
 }
