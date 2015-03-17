@@ -569,7 +569,7 @@ header {
     margin: 30px 0 20px 0; }
   /* line 532, ../../sass/screen.scss */
   .autorPost.perfil form {
-    font-size: 1.188em; }
+    font-size: 1em; }
   /* line 535, ../../sass/screen.scss */
   .autorPost.perfil button {
     margin: 20px 0 0 0;
@@ -935,6 +935,7 @@ header {
 */
 /* line 925, ../../sass/screen.scss */
 .contactForm input, .contactForm textarea {
+  font-size: 1.125em;
   background-color: #e0e0df;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -1182,33 +1183,25 @@ header {
   .autorPost.perfil h2 {
     margin: -20px 0 10px 0;
     text-align: center;
-    width: 100%; }
-  /* line 1235, ../../sass/screen.scss */
-  .autorPost.perfil form {
-    font-size: 1.188em; }
-  /* line 1238, ../../sass/screen.scss */
-  .autorPost.perfil button {
-    margin: 20px 0 0 0;
-    right: 15px;
-    position: absolute; } }
+    width: 100%; } }
 @media (max-width: 480px) {
-  /* line 1249, ../../sass/screen.scss */
+  /* line 1243, ../../sass/screen.scss */
   .legend-img .tags {
     margin: 10px; }
-    /* line 1251, ../../sass/screen.scss */
+    /* line 1245, ../../sass/screen.scss */
     .legend-img .tags a {
       display: block; }
-      /* line 1253, ../../sass/screen.scss */
+      /* line 1247, ../../sass/screen.scss */
       .legend-img .tags a:hover {
         text-decoration: none; }
 
-  /* line 1260, ../../sass/screen.scss */
+  /* line 1254, ../../sass/screen.scss */
   .line {
     width: 100%;
     border-bottom: 1px solid #aeaea6;
     margin: 15px 0; }
 
-  /* line 1263, ../../sass/screen.scss */
+  /* line 1257, ../../sass/screen.scss */
   .sidebar1, .sidebar2 {
     width: 100%; }
 
@@ -1217,72 +1210,72 @@ header {
   :: PROJETOS
   +----------------------------------------------------------------+
   */
-  /* line 1274, ../../sass/screen.scss */
+  /* line 1268, ../../sass/screen.scss */
   .infosProject {
     width: 180px; } }
 @media (max-width: 479px) {
-  /* line 1282, ../../sass/screen.scss */
+  /* line 1276, ../../sass/screen.scss */
   .top .col-xs-7, .top .col-xs-5 {
     width: 100% !important; }
-  /* line 1285, ../../sass/screen.scss */
+  /* line 1279, ../../sass/screen.scss */
   .top .menuH {
     float: right;
     margin: 0 0 0 10px; }
-    /* line 1288, ../../sass/screen.scss */
+    /* line 1282, ../../sass/screen.scss */
     .top .menuH li {
       margin: 0 0 0 10px; }
 
-  /* line 1294, ../../sass/screen.scss */
+  /* line 1288, ../../sass/screen.scss */
   .socialHeaderMobile {
     margin: 10px 0 20px 0 !important;
     float: right !important; }
 
-  /* line 1301, ../../sass/screen.scss */
+  /* line 1295, ../../sass/screen.scss */
   .legend-img span a::before {
     content: "";
     border-right: 0; }
 
-  /* line 1308, ../../sass/screen.scss */
+  /* line 1302, ../../sass/screen.scss */
   a.logoHeader {
     margin-top: 40px !important;
     float: left; } }
 @media (max-width: 360px) {
-  /* line 1315, ../../sass/screen.scss */
+  /* line 1309, ../../sass/screen.scss */
   .openSearch {
     width: 231px; }
 
-  /* line 1319, ../../sass/screen.scss */
+  /* line 1313, ../../sass/screen.scss */
   .logoProject {
     margin: 30px auto 0 auto;
     position: relative;
     width: 179px;
     float: none; }
 
-  /* line 1328, ../../sass/screen.scss */
+  /* line 1322, ../../sass/screen.scss */
   .infosProject {
     text-align: center;
     width: 100%;
     margin-top: 30px; }
-    /* line 1332, ../../sass/screen.scss */
+    /* line 1326, ../../sass/screen.scss */
     .infosProject h2 {
       margin-top: -20px; }
-    /* line 1335, ../../sass/screen.scss */
+    /* line 1329, ../../sass/screen.scss */
     .infosProject a {
       margin-bottom: 20px; }
 
-  /* line 1341, ../../sass/screen.scss */
+  /* line 1335, ../../sass/screen.scss */
   .codeLogoBottom {
     margin: 65px 0 0 10px !important; }
 
-  /* line 1347, ../../sass/screen.scss */
+  /* line 1341, ../../sass/screen.scss */
   .post .socialHeader .txt {
     display: block;
     width: 100%;
     line-height: 25px; }
-  /* line 1354, ../../sass/screen.scss */
+  /* line 1348, ../../sass/screen.scss */
   .post .contSocial {
     min-height: 100px; } }
 @media (max-width: 320px) {
-  /* line 1364, ../../sass/screen.scss */
+  /* line 1358, ../../sass/screen.scss */
   .openSearch {
     width: 191px; } }

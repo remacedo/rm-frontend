@@ -530,7 +530,7 @@ header{
 		margin: 30px 0 20px 0;
 	}
 	form{
-		font-size: $font19px;
+		font-size: $font16px;
 	}
 	button{
 		margin: 20px 0 0 0;
@@ -923,6 +923,7 @@ header{
 
 .contactForm{
 	input, textarea{
+		font-size: $font18px;
 		background-color: $color8;
 		@include border-radius (30px);
 		width: 100%;
@@ -933,7 +934,6 @@ header{
 		margin-bottom: 2px;
 		color: $color9;
 		outline: none;
-
 	}
 
 	input{
@@ -1232,15 +1232,9 @@ header{
 			text-align: center;
 			width: 100%;
 		}
-		form{
-			font-size: $font19px;
-		}
-		button{
-			margin: 20px 0 0 0;
-			right: 15px;
-			position: absolute;
-		}
+		
 	}
+
 
 }
 
