@@ -1205,77 +1205,81 @@ header {
   .sidebar1, .sidebar2 {
     width: 100%; }
 
+  /* line 1263, ../../sass/screen.scss */
+  .socialHeader .leg {
+    display: none; }
+
   /*
   +----------------------------------------------------------------+
   :: PROJETOS
   +----------------------------------------------------------------+
   */
-  /* line 1268, ../../sass/screen.scss */
+  /* line 1275, ../../sass/screen.scss */
   .infosProject {
     width: 180px; } }
 @media (max-width: 479px) {
-  /* line 1276, ../../sass/screen.scss */
+  /* line 1283, ../../sass/screen.scss */
   .top .col-xs-7, .top .col-xs-5 {
     width: 100% !important; }
-  /* line 1279, ../../sass/screen.scss */
+  /* line 1286, ../../sass/screen.scss */
   .top .menuH {
     float: right;
     margin: 0 0 0 10px; }
-    /* line 1282, ../../sass/screen.scss */
+    /* line 1289, ../../sass/screen.scss */
     .top .menuH li {
       margin: 0 0 0 10px; }
 
-  /* line 1288, ../../sass/screen.scss */
+  /* line 1295, ../../sass/screen.scss */
   .socialHeaderMobile {
     margin: 10px 0 20px 0 !important;
     float: right !important; }
 
-  /* line 1295, ../../sass/screen.scss */
+  /* line 1302, ../../sass/screen.scss */
   .legend-img span a::before {
     content: "";
     border-right: 0; }
 
-  /* line 1302, ../../sass/screen.scss */
+  /* line 1309, ../../sass/screen.scss */
   a.logoHeader {
     margin-top: 40px !important;
     float: left; } }
 @media (max-width: 360px) {
-  /* line 1309, ../../sass/screen.scss */
+  /* line 1316, ../../sass/screen.scss */
   .openSearch {
     width: 231px; }
 
-  /* line 1313, ../../sass/screen.scss */
+  /* line 1320, ../../sass/screen.scss */
   .logoProject {
     margin: 30px auto 0 auto;
     position: relative;
     width: 179px;
     float: none; }
 
-  /* line 1322, ../../sass/screen.scss */
+  /* line 1329, ../../sass/screen.scss */
   .infosProject {
     text-align: center;
     width: 100%;
     margin-top: 30px; }
-    /* line 1326, ../../sass/screen.scss */
+    /* line 1333, ../../sass/screen.scss */
     .infosProject h2 {
       margin-top: -20px; }
-    /* line 1329, ../../sass/screen.scss */
+    /* line 1336, ../../sass/screen.scss */
     .infosProject a {
       margin-bottom: 20px; }
 
-  /* line 1335, ../../sass/screen.scss */
+  /* line 1342, ../../sass/screen.scss */
   .codeLogoBottom {
     margin: 65px 0 0 10px !important; }
 
-  /* line 1341, ../../sass/screen.scss */
+  /* line 1348, ../../sass/screen.scss */
   .post .socialHeader .txt {
     display: block;
     width: 100%;
     line-height: 25px; }
-  /* line 1348, ../../sass/screen.scss */
+  /* line 1355, ../../sass/screen.scss */
   .post .contSocial {
     min-height: 100px; } }
 @media (max-width: 320px) {
-  /* line 1358, ../../sass/screen.scss */
+  /* line 1365, ../../sass/screen.scss */
   .openSearch {
     width: 191px; } }
