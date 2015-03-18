@@ -586,11 +586,10 @@ header{
 		}
 	}
 	ul{
-		position: relative;
-		margin: 0 auto;
-		width: 150px; /* MANIPULAR NA PAGINAÇÃO */
+		text-align: center;
+
 		li{
-			float: left;
+			display: inline-block;
 			@include border-radius ( 50px );
 			a{
 				display: block;
@@ -767,7 +766,7 @@ header{
 		background: none;
 		margin: 20px 0 0 0;
 		ul{
-			width: 165px; /* Manipular */
+			text-align: center;
 		}
 	}
 
