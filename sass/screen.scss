@@ -203,6 +203,46 @@ ul.menuH{
 	z-index: 20;
 }
 
+.modalBackgroundMobile{
+	display: none;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	padding:0;
+	position: fixed;
+	z-index:99;
+	background-color: #000;
+	opacity: 0.85;
+	-moz-opacity: 0.85;
+	filter: alpha(opacity=85);
+}
+
+.modalMenuCateg{
+	width: 200px;
+	min-height: 310px;
+	background: $color1;
+	display: none;
+	z-index: 999;
+	position: absolute;
+	top: 50px;
+	right: 15px;
+	@include border-radius ( 30px );
+	padding: 10px;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: alpha(opacity=0);
+	position: fixed;
+}
+
+.closeMenuMobile{
+	width: 37px;
+	height: 37px;
+	display: inline-block;
+	margin: 10px 0 0 20px;
+}
+
+
 
 /*
 +----------------------------------------------------------------+
@@ -268,7 +308,7 @@ header{
 .contMenuCateg{
 	width: 100%;
 	float: left;
-	margin: 32px 0 0 0;
+	margin: 32px 0 0 -15px;
 }
 
 .searchHeader, .searchInput{
@@ -966,8 +1006,6 @@ header{
 }
 
 
-
-
 /*
 +----------------------------------------------------------------+
 :: FOOTER
@@ -1059,9 +1097,6 @@ header{
 		}
 	}
 
-}
-
-@media (min-width: 1024px) and (max-width: 1280px) {
 }
 
 
@@ -1188,7 +1223,6 @@ header{
 	}
 }
 
-
 @media (max-width: 640px) {
 	
 	/*
@@ -1233,8 +1267,6 @@ header{
 		}
 		
 	}
-
-
 }
 
 @media (max-width: 480px) {
@@ -1274,7 +1306,6 @@ header{
 	.infosProject{
 		width: 180px;
 	}
-
 }
 
 @media (max-width: 479px) {
@@ -1356,8 +1387,6 @@ header{
 	}
 
 	}
-
-
 }
 
 @media(max-width: 320px){

@@ -33,9 +33,23 @@ $(document).ready(function(){
 	});
 */
 
+
+	/* BOTÃO SCROLL TOP */
 	$(".btnTop").click(function(){
 		$("html, body").animate({ scrollTop: 0 }, 800);
 	});
+
+	/* LIGHTBOX - MENU CATEGORIA MOBILE */
+	$(".menuMobile").click(function(){
+		$(".modalBackgroundMobile").fadeIn('fast');
+		$(".modalMenuCateg").fadeIn('fast').animate({ marginTop: '60px', opacity: 1}, 400);
+	});
+
+	$(".closeMenuMobile").click(function(){
+		$(".modalMenuCateg, .modalBackgroundMobile").fadeOut('fast');
+		$(".modalMenuCateg").animate({ marginTop: '0', opacity: 0}, 400);
+	});
+
 
 
 });
