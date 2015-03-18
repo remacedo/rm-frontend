@@ -15,6 +15,7 @@ $(document).ready(function(){
 +----------------------------------------------------------------+
 */
 
+/*
 	$(".iconLupa").click(function(e){
 		
 		e.preventDefault();
@@ -29,6 +30,12 @@ $(document).ready(function(){
 		     fieldSearch.focus();
 		}
 
+	});
+*/
+
+	$(".btnTop").click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 800);
+		//console.log("TEste");
 	});
 
 
